@@ -22,10 +22,9 @@ spacy_models = {
 }
 
 # define directories
-dataset = './all_annotated.tsv'
-clean_data_dir = './clean_data'
-csv_dir = './processed_csv'
-lang = 'en'
+dataset = './files/all_annotated.tsv'
+clean_data_dir = './files/clean_data'
+csv_dir = './files/processed_csv'
 
 language_detection(dataset = dataset, clean_data_dir = clean_data_dir, language_list = language_list)
 

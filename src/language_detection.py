@@ -7,7 +7,7 @@ import os
 import fasttext
 
 warnings.filterwarnings('ignore')
-PRETRAINED_MODEL_PATH = './lid.176.ftz'
+PRETRAINED_MODEL_PATH = './files/lid.176.ftz'
 
 def language_detection(dataset, clean_data_dir, language_list):
     df = pd.read_csv(dataset, sep='\t', header=0)
