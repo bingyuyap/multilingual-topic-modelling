@@ -1,6 +1,8 @@
 from language_detection import language_detection
 from tweet_processing import process_tweets
 import warnings
+import nltk
+import os
 
 warnings.filterwarnings('ignore')
 nltk.download('stopwords')
@@ -25,6 +27,12 @@ spacy_models = {
 dataset = './files/all_annotated.tsv'
 clean_data_dir = './files/clean_data'
 csv_dir = './files/processed_csv'
+
+if not os.path.exists(clean_data_dir):
+        os.mkdir(clean_data_dir)
+
+if not os.path.exists(csv_dir):
+        os.mkdir(csv_dir)
 
 language_detection(dataset = dataset, clean_data_dir = clean_data_dir, language_list = language_list)
 
