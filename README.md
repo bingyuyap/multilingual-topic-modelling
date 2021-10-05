@@ -6,6 +6,10 @@ Note that this is just a simple assignment done in one night. There are a lot of
 ## Usage
 1. You can unzip the file or you can git clone it from [here](https://github.com/bingyuyap/dathena-assignment)
 
+2. Cd into the project directory and run `./spacy_models_script.sh` in terminal.
+
+3. Cd into `src` directory and run `python main.py` to run the data pipeline.
+
 ## Documentation
 
 ### Process of searching for data set / source
